@@ -94,3 +94,10 @@ section {
     width: fit-content;
     margin: auto;
 }
+
+.grid {
+    gap: 1.2rem;
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: repeat(4, auto);
+}

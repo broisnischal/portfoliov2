@@ -15,14 +15,16 @@
                 grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
                 img {
                     opacity: 0.4;
-                    filter: grayscale(20);
+                    // box-shadow: 20px 20px 10px var(--shadow);
+
+                    filter: grayscale(20) drop-shadow(2px 2px 4px black);
                     &:hover {
                         filter: grayscale(0);
                         opacity: 1;
+                        filter: grayscale(0) drop-shadow(2px 2px 4px black);
                     }
                 }
                 img.active {
-                    filter: grayscale(0);
                     opacity: 1;
                 }
             }

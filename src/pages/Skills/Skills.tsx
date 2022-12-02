@@ -34,93 +34,23 @@ function Skills() {
                 <h1 className='title center'>Skills</h1>
                 <div className='box'>
                     <div className='img-skills'>
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={Git}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={One01}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={Blender}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={csharp}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={code}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={flutter}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={github}
-                            alt=''
-                        />
-                        <img draggable='false' className={active ? 'active' : ''} src={js} alt='' />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={node}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={php}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={python}
-                            alt=''
-                        />
-                        <img draggable='false' className={active ? 'active' : ''} src={ps} alt='' />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={react}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={redux}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={rust}
-                            alt=''
-                        />
-                        <img
-                            draggable='false'
-                            className={active ? 'active' : ''}
-                            src={spread}
-                            alt=''
-                        />
-                        <img draggable='false' className={active ? 'active' : ''} src={ts} alt='' />
+                        <img className={active ? 'active' : ''} src={Git} alt='' />
+                        <img className={active ? 'active' : ''} src={One01} alt='' />
+                        <img className={active ? 'active' : ''} src={Blender} alt='' />
+                        <img className={active ? 'active' : ''} src={csharp} alt='' />
+                        <img className={active ? 'active' : ''} src={code} alt='' />
+                        <img className={active ? 'active' : ''} src={flutter} alt='' />
+                        <img className={active ? 'active' : ''} src={github} alt='' />
+                        <img className={active ? 'active' : ''} src={js} alt='' />
+                        <img className={active ? 'active' : ''} src={node} alt='' />
+                        <img className={active ? 'active' : ''} src={php} alt='' />
+                        <img className={active ? 'active' : ''} src={python} alt='' />
+                        <img className={active ? 'active' : ''} src={ps} alt='' />
+                        <img className={active ? 'active' : ''} src={react} alt='' />
+                        <img className={active ? 'active' : ''} src={redux} alt='' />
+                        <img className={active ? 'active' : ''} src={rust} alt='' />
+                        <img className={active ? 'active' : ''} src={spread} alt='' />
+                        <img className={active ? 'active' : ''} src={ts} alt='' />
                     </div>
                 </div>
             </div>
