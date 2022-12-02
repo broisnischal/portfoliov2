@@ -1,0 +1,22 @@
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .center {
+        .box {
+            width: min(90%, 800px);
+            margin: auto;
+            .img {
+                display: flex;
+                align-items: center;
+                margin: 10px;
+                ul {
+                    transform: translateX(40px);
+                }
+            }
+            .desc {
+                text-align: justify;
+            }
+        }
+    }
+}

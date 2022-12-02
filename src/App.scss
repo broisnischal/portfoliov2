@@ -1,0 +1,65 @@
+:root {
+    --background: #ffffff;
+    --text-primary: rgb(37, 37, 37);
+    --text-secondary: #21846f;
+    --text-highlight: royalblue;
+    --accent: rebeccapurple;
+    --shadow: #333;
+}
+
+[data-theme='dark'] {
+    --shadow: #eee;
+    --background: #18191a;
+    --text-primary: #eee;
+    --text-secondary: #21846f;
+    --text-highlight: royalblue;
+    --accent: rgb(238, 46, 46);
+    --background-s: #242526;
+    --blue: #26ade9;
+}
+
+.App {
+    color: var(--text-primary);
+    transition: all 0.5s;
+    background: var(--background);
+    color: var(--text-primary);
+    overflow-x: hidden !important;
+}
+
+.horizontal-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 999;
+    pointer-events: none;
+    border-radius: 0;
+    //   visibility: hidden;
+    background: rgb(176, 176, 176);
+    .inner {
+        transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        overflow: hidden;
+        background: var(--text-secondary);
+        width: 20%;
+        position: relative;
+        height: 4px;
+    }
+}
+
+.bottom {
+    background: rgb(176, 176, 176);
+    visibility: visible;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .horizontal-box {
+        position: fixed;
+        top: 0vh;
+        z-index: 1000;
+        .inner {
+            height: 3px;
+        }
+    }
+}

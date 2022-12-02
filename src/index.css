@@ -18,7 +18,7 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
     scroll-behavior: smooth;
 }
 
@@ -68,5 +68,29 @@ select {
 }
 
 section {
-    height: 100vh;
+    min-height: 60vh;
+}
+
+.title {
+    font-size: 60px;
+    color: var(--text-primary);
+    text-shadow: 2px 2px red, -2px -2px cyan;
+}
+.sub {
+    margin: 10px 0;
+}
+.emoji {
+    font-size: 25px;
+}
+.highlight {
+    color: var(--text-highlight);
+}
+
+.focus {
+    color: var(--accent);
+}
+
+.center {
+    width: fit-content;
+    margin: auto;
 }

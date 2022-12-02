@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    p {
+        margin: 10px 0;
+    }
     .box {
-        width: min(90%, 1000px);
+        width: min(90%, 900px);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -13,10 +17,24 @@
             margin-right: 2vw;
             img {
                 border-radius: 50%;
+                box-shadow: 2px -2px 10px var(--shadow);
             }
         }
         .desc {
             flex: 3;
+        }
+    }
+    .focus {
+        color: var(--accent);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #home {
+        height: max-content;
+        padding: 100px 0;
+        .box {
+            flex-direction: column;
         }
     }
 }

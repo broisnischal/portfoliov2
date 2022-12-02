@@ -5,6 +5,9 @@ nav {
     justify-content: space-between;
     padding: 20px 50px;
     box-shadow: 1px 1px 2px black;
+    .logo {
+        margin-right: 10px;
+    }
     button {
         color: var(--text-primary);
         background: transparent;
@@ -14,10 +17,38 @@ nav {
     }
     .right {
         a {
+            color: var(--text-highlight);
             .icon {
                 margin: 10px;
-                font-size: 20px;
+                font-size: 25px;
             }
+        }
+    }
+}
+.theme {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.resp {
+    display: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        .hide {
+            display: none;
+        }
+        .show {
+            position: fixed;
+            top: 15%;
+            left: 5px;
+            a {
+                display: flex;
+            }
+        }
+        .resp {
+            display: block;
         }
     }
 }

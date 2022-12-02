@@ -1,0 +1,43 @@
+#skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .center {
+        h1 {
+            text-align: center;
+        }
+        width: min(90%, 1200px);
+        .box {
+            .img-skills {
+                display: grid;
+                margin: auto;
+                width: min(90%, 1000px);
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                img {
+                    opacity: 0.4;
+                    filter: grayscale(20);
+                    &:hover {
+                        filter: grayscale(0);
+                        opacity: 1;
+                    }
+                }
+                img.active {
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #skills {
+        .center {
+            .box {
+                .img-skills {
+                    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+                }
+            }
+        }
+    }
+}

@@ -27,8 +27,14 @@ function Home() {
                     </div>
                     <div className='desc'>
                         <h4>Hello it&apos;s me</h4>
-                        <h1>Nischal Dahal</h1>
-                        <p className=''>
+                        <h1 className='title'>Nischal </h1>{' '}
+                        <h3 className='sub'>
+                            Also known as <span className='focus'>neeswebservices</span>.
+                        </h3>
+                        <span className='highlight'>
+                            A simple guy who think&apos;s about everyone&apos;s death.{' '}
+                        </span>
+                        <p>
                             A creative <span className='emoji'>0️⃣</span> from Nepal who is trying to
                             become <span className='emoji'>!0️⃣</span>. Just kidding, hello if you
                             are <span className='focus'>reading</span> this which i know you

@@ -1,0 +1,131 @@
+import './Skills.scss';
+import Git from '../../assets/stickers/git.png';
+import One01 from '../../assets/stickers/1001.png';
+import Blender from '../../assets/stickers/blender.png';
+import csharp from '../../assets/stickers/csharp.png';
+import code from '../../assets/stickers/code.png';
+import flutter from '../../assets/stickers/flutter.png';
+import github from '../../assets/stickers/github.png';
+import js from '../../assets/stickers/js.png';
+import node from '../../assets/stickers/node.png';
+import php from '../../assets/stickers/php.png';
+import ps from '../../assets/stickers/ps.png';
+import python from '../../assets/stickers/python.png';
+import react from '../../assets/stickers/react.png';
+import redux from '../../assets/stickers/redux.png';
+import rust from '../../assets/stickers/rust.png';
+import spread from '../../assets/stickers/spread.png';
+import ts from '../../assets/stickers/ts.png';
+import React from 'react';
+
+function Skills() {
+    const [active, setActive] = React.useState(false);
+
+    React.useEffect(() => {
+        setInterval(() => {
+            setActive(true);
+            setActive(false);
+        }, 1000);
+    }, []);
+
+    return (
+        <section id='skills'>
+            <div className='center'>
+                <h1 className='title center'>Skills</h1>
+                <div className='box'>
+                    <div className='img-skills'>
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={Git}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={One01}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={Blender}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={csharp}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={code}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={flutter}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={github}
+                            alt=''
+                        />
+                        <img draggable='false' className={active ? 'active' : ''} src={js} alt='' />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={node}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={php}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={python}
+                            alt=''
+                        />
+                        <img draggable='false' className={active ? 'active' : ''} src={ps} alt='' />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={react}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={redux}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={rust}
+                            alt=''
+                        />
+                        <img
+                            draggable='false'
+                            className={active ? 'active' : ''}
+                            src={spread}
+                            alt=''
+                        />
+                        <img draggable='false' className={active ? 'active' : ''} src={ts} alt='' />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Skills;

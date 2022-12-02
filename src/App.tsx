@@ -1,8 +1,11 @@
-import './App.css';
+import React from 'react';
+import './App.scss';
 import useLocalStorage from 'use-local-storage';
 import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './pages/Home/Home';
+import About from './pages/About/About.jsx';
+import Skills from './pages/Skills/Skills';
 
 function App(): JSX.Element {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -15,16 +18,14 @@ function App(): JSX.Element {
 
     return (
         <div className='App' data-theme={theme}>
-            <span>
-                This website is in under development.{' '}
-                <a href='https://dahal-nischal.com.np/'>Check production </a>{' '}
-            </span>
             <Navbar>
-                <button onClick={switchTheme}>
+                <button className='theme' onClick={switchTheme}>
                     {theme === 'dark' ? <BsSunFill /> : <BsFillMoonStarsFill />}
                 </button>
             </Navbar>
             <Home />
+            <About />
+            <Skills />
         </div>
     );
 }
