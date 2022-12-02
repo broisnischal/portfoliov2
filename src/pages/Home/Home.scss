@@ -1,0 +1,22 @@
+#home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+        width: min(90%, 1000px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .img {
+            flex: 1;
+            margin-right: 2vw;
+            img {
+                border-radius: 50%;
+            }
+        }
+        .desc {
+            flex: 3;
+        }
+    }
+}
