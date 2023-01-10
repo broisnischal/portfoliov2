@@ -50,7 +50,7 @@ function Navbar({ children }: types) {
                 </div>
                 <div className={open ? 'right show' : 'right hide'}>
                     {Navitems.map((item, i) => (
-                        <a href={item.id} key={i}>
+                        <a href={item.id} key={i} title={item.title}>
                             {item.icon && <span className='icon'>{item.icon}</span>}
                         </a>
                     ))}

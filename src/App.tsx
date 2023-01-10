@@ -18,20 +18,25 @@ function App(): JSX.Element {
     };
 
     return (
-        <div className='App' data-theme={theme}>
-            <p style={{ textAlign: 'center', padding: '10px 0' }}>
-                🔥 Website under construction, and You may experience some 🐞.
-            </p>
-            <Navbar>
-                <button className='theme' onClick={switchTheme}>
-                    {theme === 'dark' ? <BsSunFill /> : <BsFillMoonStarsFill />}
-                </button>
-            </Navbar>
-            <Home />
-            <About />
-            <Skills />
-            <Works />
-        </div>
+        <>
+            <div className='App' data-theme={theme}>
+                <p style={{ textAlign: 'center', padding: '10px 0' }}>
+                    🔥 Website under construction, and You may experience some 🐞.
+                </p>
+                <Navbar>
+                    <>
+                        <button className='theme' onClick={switchTheme}>
+                            {theme === 'dark' ? <BsSunFill /> : <BsFillMoonStarsFill />}
+                        </button>
+                    </>
+                </Navbar>
+
+                <Home />
+                <About />
+                <Skills />
+                <Works />
+            </div>
+        </>
     );
 }
 
