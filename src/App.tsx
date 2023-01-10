@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About.jsx';
 import Skills from './pages/Skills/Skills';
 import Works from './pages/Works/Works';
+import ScrollToTop from './Components/scrollToTop';
 
 function App(): JSX.Element {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -35,6 +36,7 @@ function App(): JSX.Element {
                 <About />
                 <Skills />
                 <Works />
+                <ScrollToTop />
             </div>
         </>
     );

@@ -1,0 +1,12 @@
+.top {
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background: var(--background-s);
+    color: var(--text-primary);
+}
