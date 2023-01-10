@@ -1,8 +1,13 @@
+import { useRef } from 'react';
+import useIntersecting from '../../Hooks/useIntersecting';
 import './About.scss';
 
 function About() {
+    const aboutRef = useRef();
+
+    useIntersecting(aboutRef, 'Nischal Dahal | About');
     return (
-        <section id='about'>
+        <section id='about' ref={aboutRef}>
             <div className='center'>
                 <h1 className='title center'>About ME</h1>
                 <div className='box'>

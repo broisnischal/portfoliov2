@@ -16,7 +16,8 @@ import redux from '../../assets/stickers/redux.png';
 import rust from '../../assets/stickers/rust.png';
 import spread from '../../assets/stickers/spread.png';
 import ts from '../../assets/stickers/ts.png';
-import React from 'react';
+import React, { createRef } from 'react';
+import useIntersecting from '../../Hooks/useIntersecting';
 
 function Skills() {
     const [active, setActive] = React.useState(false);
@@ -28,8 +29,12 @@ function Skills() {
         }, 1000);
     }, []);
 
+    const ref = createRef<HTMLDivElement>();
+
+    useIntersecting(ref, 'Nischal Dahal | Skills');
+
     return (
-        <section id='skills'>
+        <section id='skills' ref={ref}>
             <div className='center'>
                 <h1 className='title center'>Skills</h1>
                 <div className='box'>

@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './pages/Home/Home';
 import About from './pages/About/About.jsx';
 import Skills from './pages/Skills/Skills';
+import Works from './pages/Works/Works';
 
 function App(): JSX.Element {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,6 +19,9 @@ function App(): JSX.Element {
 
     return (
         <div className='App' data-theme={theme}>
+            <p style={{ textAlign: 'center', padding: '10px 0' }}>
+                🔥 Website under construction, and You may experience some 🐞.
+            </p>
             <Navbar>
                 <button className='theme' onClick={switchTheme}>
                     {theme === 'dark' ? <BsSunFill /> : <BsFillMoonStarsFill />}
@@ -26,6 +30,7 @@ function App(): JSX.Element {
             <Home />
             <About />
             <Skills />
+            <Works />
         </div>
     );
 }
