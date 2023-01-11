@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import useLocalStorage from 'use-local-storage';
 import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
