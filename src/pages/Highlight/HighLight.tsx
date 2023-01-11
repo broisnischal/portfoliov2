@@ -1,5 +1,5 @@
 import React, { createRef } from 'react';
-import { FaGraduationCap, FaSuitcase } from 'react-icons/fa';
+import { FaGraduationCap } from 'react-icons/fa';
 
 import './HighLight.scss';
 import useIntersecting from '../../Hooks/useIntersecting';
