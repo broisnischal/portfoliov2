@@ -36,6 +36,12 @@ const Navitems = [
         id: '#skills',
     },
     {
+        title: 'Skills',
+        icon: <HiLightBulb />,
+        path: '/skills',
+        id: '#skills',
+    },
+    {
         title: 'Services',
         icon: <MdOutlineMiscellaneousServices />,
         path: '/services',
