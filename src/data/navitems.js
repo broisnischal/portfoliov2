@@ -29,12 +29,7 @@ const Navitems = [
         path: '/education',
         id: '#education',
     },
-    {
-        title: 'Skills',
-        icon: <HiLightBulb />,
-        path: '/skills',
-        id: '#skills',
-    },
+
     {
         title: 'Skills',
         icon: <HiLightBulb />,
