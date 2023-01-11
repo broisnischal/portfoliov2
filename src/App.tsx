@@ -8,6 +8,8 @@ import About from './pages/About/About.jsx';
 import Skills from './pages/Skills/Skills';
 import Works from './pages/Works/Works';
 import ScrollToTop from './Components/scrollToTop';
+import HighLight from './pages/Highlight/HighLight';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 function App(): JSX.Element {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -31,12 +33,13 @@ function App(): JSX.Element {
                         </button>
                     </>
                 </Navbar>
-
+                <Sidebar />
                 <Home />
                 <About />
                 <Skills />
                 <Works />
-                <ScrollToTop />
+                <HighLight />
+                <ScrollToTop switchTheme={switchTheme} theme={theme} />
             </div>
         </>
     );

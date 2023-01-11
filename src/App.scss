@@ -1,11 +1,14 @@
 :root {
-    --background: #ffffff;
+    --background: #dedede;
     --text-primary: rgb(37, 37, 37);
     --text-secondary: #21846f;
     --text-highlight: royalblue;
     --accent: rebeccapurple;
     --shadow: #333;
     --background-s: rgb(237, 237, 237);
+    --text-cyan: rgb(34, 97, 255);
+    --background-dark: #e1e1e1;
+    --background-dark-shine: #2e3a4666;
 
     --text: #f66936;
     --card: #202426;
@@ -39,6 +42,9 @@
     --accent: rgb(238, 46, 46);
     --background-s: #242526;
     --blue: #26ade9;
+    --text-cyan: cyan;
+    --background-dark: #252828;
+    --background-dark-shine: #18191a;
 }
 
 .App {
@@ -85,4 +91,8 @@
             height: 3px;
         }
     }
+}
+
+.protection-eye {
+    filter: grayscale(50%) hue-rotate(10deg) contrast(105%) sepia(20%);
 }

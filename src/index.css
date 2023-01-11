@@ -76,6 +76,7 @@ section {
     color: var(--text-primary);
     text-shadow: 2px 2px red, -2px -2px cyan;
 }
+
 .sub {
     margin: 10px 0;
 }

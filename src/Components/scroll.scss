@@ -2,6 +2,9 @@
     border: none;
     outline: none;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     position: fixed;
     bottom: 30px;
@@ -9,4 +12,21 @@
     cursor: pointer;
     background: var(--background-s);
     color: var(--text-primary);
+}
+
+.bottomtheme {
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    cursor: pointer;
+    background: var(--background-s);
+    color: var(--text-primary);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

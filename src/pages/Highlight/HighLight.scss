@@ -1,0 +1,123 @@
+.df {
+    display: flex;
+}
+
+#education {
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        .box {
+            &:hover h1 .cap {
+                color: var(--text-highlight);
+            }
+            box-shadow: 7px -1px 46px -10px rgba(0, 0, 0, 0.1);
+
+            width: min(90%, 600px);
+            padding: 3rem 4rem;
+            background: var(--background-dark);
+            border-radius: 20px;
+            h1 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--text-primary);
+
+                .cap {
+                    color: var(--text-secondary);
+                    font-size: 30px;
+                }
+            }
+            .detail {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5px 0;
+                .high {
+                    color: var(--text-cyan);
+                }
+            }
+            .date {
+                background: var(--background-dark-shine);
+                padding: 2px 20px;
+                border-radius: 9px;
+                display: inline-block;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+#experience {
+    margin-top: 10rem;
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        .box {
+            &:hover h1 .cap {
+                color: var(--text-highlight);
+            }
+            width: min(90%, 600px);
+            padding: 3rem 4rem;
+            background: var(--background-dark);
+            border-radius: 20px;
+            box-shadow: 7px -1px 46px -10px rgba(0, 0, 0, 0.1);
+            h1 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--text-primary);
+
+                .cap {
+                    color: var(--text-secondary);
+                    font-size: 30px;
+                }
+            }
+            .detail {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5px 0;
+                .high {
+                    color: var(--text-secondary);
+                }
+            }
+            .date {
+                background: var(--background-dark-shine);
+                padding: 2px 20px;
+                border-radius: 9px;
+                display: inline-block;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .df {
+        flex-direction: column;
+    }
+
+    #education,
+    #experience {
+        .center {
+            .box {
+                padding: 2rem 2rem;
+                .detail {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+}
