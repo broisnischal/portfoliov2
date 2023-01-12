@@ -7,9 +7,15 @@
     top: 50%;
     transform: translate(-50%, -70%);
     font-size: 25px;
+    a {
+        color: var(--text-highlight);
+        &:hover {
+            color: var(--text-cyan);
+        }
+    }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
     .sidebar {
         display: none;
     }

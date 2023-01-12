@@ -14,20 +14,18 @@ const useIntersecting = (
                 setVisible(entry.isIntersecting);
             },
             {
-                threshold: 0.5,
+                threshold: 1,
             },
         );
 
         observer.observe(ref.current);
-    }, [ref]);
 
-    useEffect(() => {
         if (visible) {
             document.title = title;
         } else {
             document.title = defaultTitle;
         }
-    }, [visible]);
+    }, [ref, visible]);
 };
 
 export default useIntersecting;

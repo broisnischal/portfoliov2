@@ -7,9 +7,11 @@ function About() {
 
     useIntersecting(aboutRef, 'Nischal Dahal | About');
     return (
-        <section id='about' ref={aboutRef}>
+        <section id='about'>
             <div className='center'>
-                <h1 className='title center'>About ME</h1>
+                <h1 className='title center' ref={aboutRef}>
+                    About ME
+                </h1>
                 <div className='box'>
                     <div className='img'>
                         <img

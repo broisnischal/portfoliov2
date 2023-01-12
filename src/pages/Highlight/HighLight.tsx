@@ -4,7 +4,7 @@ import { FaGraduationCap } from 'react-icons/fa';
 import './HighLight.scss';
 import useIntersecting from '../../Hooks/useIntersecting';
 const EducationData = [
-    {
+    {   
         initialDate: '09/2022',
         institution: 'Undergraduation',
         level: 'BSC CSIT',
